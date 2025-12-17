@@ -1,0 +1,7 @@
+{
+    "textureResolution":      "Medium",
+    "textureAnisotropic":     "Medium",
+    "shadowResolution":       "Medium",
+    "ambientOcclusion":       "Medium",
+    "volumetricClouds":       "Medium"
+}

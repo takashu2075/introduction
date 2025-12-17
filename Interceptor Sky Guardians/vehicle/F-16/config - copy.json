@@ -1,0 +1,263 @@
+{
+    "name": "XF-0",
+    "type": "aircraft",
+    "model": "model.glb",
+    "bodyRadius": 20.0,
+    "bodySize": {
+        "x": 100.0,
+        "y": 20.0,
+        "z": 100.0
+    },
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.0,
+        "z": 25.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": -5.2
+    },
+    "maxSpeed": 400.0,
+    "minSpeed": 200.0,
+	"maxForce": 150.0,
+	"health": 100.0,
+    "maxRoll": 3.0,
+	"intercept": true,
+	"useWeaponsBay": true,
+	"thrustRate": 50.0,
+	"brakeRate": 50.0,
+	"turnRate": 1.0,
+	"rollRate": 3.0,
+    "thrustForce": 25.0,
+    "brakeForce": 50.0,
+    "cruiseSpeed": 300.0,
+    "liftForce": 0.05,
+    "pitchForce": 0.3,
+	"maxPitch": 2.0,
+    "rollForce": 1.0,
+    "yawForce": 0.01,
+    "maxYaw": 0.03,
+    "linearDamping": {
+        "x": 0.1,
+        "y": 0.1,
+        "z": 0.95
+    },
+    "angularDamping": {
+        "x": 0.05,
+        "y": 0.05,
+        "z": 0.05
+    },
+    "components": [
+		{
+			"name": "Elevator-Rudder_Right",
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"min": -0.2,
+			"max":  0.2,
+			"target": "elevator",
+			"inverse": true
+		},
+		{
+			"name": "Elevator-Rudder_Left",
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"min": -0.2,
+			"max":  0.2,
+			"target": "elevator",
+			"inverse": true
+		},
+		{
+			"name": "Aileron_Right",
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"min": -0.7,
+			"max":  0.7,
+			"target": "aileron",
+			"inverse": true
+		},
+		{
+			"name": "Aileron_Left",
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"min": -0.7,
+			"max":  0.7,
+			"target": "aileron",
+			"inverse": false
+		},
+		{
+			"name": "Gear_Front",
+			"position": {
+				"x": 0.0,
+				"y": -0.4,
+				"z": -4.0
+			},
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"min": 0.0,
+			"max": 1.8,
+			"target": "gear",
+			"inverse": true
+		},
+		{
+			"name": "Gear_Rear_Right",
+			"position": {
+				"x": 0.75,
+				"y": -0.4,
+				"z": 1.0
+			},
+			"joint": "hinge",
+			"axis": {
+				"x": -1.0,
+				"y": -0.2,
+				"z": 0.3
+			},
+			"min": 0.0,
+			"max": -1.8,
+			"target": "gear",
+			"inverse": true
+		},
+		{
+			"name": "Gear_Rear_Left",
+			"position": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": 1.0
+			},
+			"joint": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": -0.2,
+				"z": 0.3
+			},
+			"min": 0.0,
+			"max": 1.8,
+			"target": "gear",
+			"inverse": true
+		},
+		{
+			"name": "Weapons_Bay_Right",
+			"joint": "hinge",
+			"axis": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 1.0
+			},
+			"min": 0.0,
+			"max": 2.0,
+			"target": "missile"
+		},
+		{
+			"name": "Weapons_Bay_Right_Child",
+			"joint": "hinge",
+			"axis": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": -1.0
+			},
+			"min": 0.0,
+			"max": 3.0,
+			"target": "missile"
+		},
+		{
+			"name": "Weapons_Bay_Left",
+			"joint": "hinge",
+			"axis": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": -1.0
+			},
+			"min": 0.0,
+			"max": 2.0,
+			"target": "missile"
+		},
+		{
+			"name": "Weapons_Bay_Left_Child",
+			"joint": "hinge",
+			"axis": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 1.0
+			},
+			"min": 0.0,
+			"max": 3.0,
+			"target": "missile"
+		},
+		{
+			"name": "Missile_Launcher",
+			"joint": "slide",
+			"axis": {
+				"x": 0.0,
+				"y": -1.0,
+				"z": 0.0
+			},
+			"min": 0.0,
+			"max": 0.3,
+			"target": "missile"
+		}
+	],
+    "groundOffset": {
+        "x": 0.0,
+        "y": 2.12,
+        "z": 0.0
+    },
+	"weapons": [
+		{
+			"type": "gun",
+			"position": {
+				"x": 0.7,
+				"y": -0.7,
+				"z": -3.0
+			},
+			"fireInterval": 0.1,
+			"bulletPower": 20.0,
+			"bulletSpeed": 2000.0
+			
+		},
+		{
+			"type": "missile",
+			"damage": 10.0,
+			"launchers": [
+				{
+					"damage": 100.0,
+					"component": "Missile_Launcher",
+					"position": {
+						"x": 3.0,
+						"y": -1.0,
+						"z": 0.0
+					}
+				},
+				{
+					"damage": 100.0,
+					"component": "Missile_Launcher",
+					"position": {
+						"x": -3.0,
+						"y": -1.0,
+						"z": 0.0
+					}
+				}
+			],
+			"reloadTime": 1.0
+		}
+	]
+}

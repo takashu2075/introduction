@@ -1,0 +1,127 @@
+{
+    "pitchUp": {
+        "type": 0,
+        "index": 1,
+        "positive": true
+    },
+    "pitchDown": {
+        "type": 0,
+        "index": 1,
+        "positive": false
+    },
+    "rollRight": {
+        "type": 0,
+        "index": 0,
+        "positive": true
+    },
+    "rollLeft": {
+        "type": 0,
+        "index": 0,
+        "positive": false
+    },
+    "yawRight": {
+        "type": 1,
+        "index": 7,
+        "positive": true
+    },
+    "yawLeft": {
+        "type": 1,
+        "index": 6,
+        "positive": true
+    },
+    "throttleUp": {
+        "type": 1,
+        "index": 5,
+        "positive": true
+    },
+    "throttleDown": {
+        "type": 1,
+        "index": 4,
+        "positive": true
+    },
+    "moveUp": {
+        "type": 1,
+        "index": 7,
+        "positive": true
+    },
+    "moveDown": {
+        "type": 1,
+        "index": 6,
+        "positive": true
+    },
+    "moveFast": {
+        "type": 1,
+        "index": 5,
+        "positive": true
+    },
+    "moveSlow": {
+        "type": 1,
+        "index": 4,
+        "positive": true
+    },
+    "fireGun": {
+        "type": 1,
+        "index": 0,
+        "positive": true
+    },
+    "fireSubWeapon": {
+        "type": 1,
+        "index": 1,
+        "positive": true
+    },
+    "changeSubWeapon": {
+        "type": 1,
+        "index": 2,
+        "positive": true
+    },
+    "changeTarget": {
+        "type": 1,
+        "index": 3,
+        "positive": true
+    },
+    "changeRadarScale": {
+        "type": 1,
+        "index": 8,
+        "positive": true
+    },
+    "changeView": {
+        "type": 1,
+        "index": 11,
+        "positive": true
+    },
+    "toggleGear": {
+        "type": 1,
+        "index": 10,
+        "positive": true
+    },
+    "toggleAoALimitter": {
+        "type": 1,
+        "index": 13,
+        "positive": true
+    },
+    "lookRight": {
+        "type": 0,
+        "index": 2,
+        "positive": true
+    },
+    "lookLeft": {
+        "type": 0,
+        "index": 2,
+        "positive": false
+    },
+    "lookUp": {
+        "type": 0,
+        "index": 3,
+        "positive": false
+    },
+    "lookDown": {
+        "type": 0,
+        "index": 3,
+        "positive": true
+    },
+    "pause": {
+        "type": 1,
+        "index": 9,
+        "positive": true
+    }
+}

@@ -1,0 +1,472 @@
+{
+    "name": "XF-0",
+    "type": "aircraft",
+    "model": "model.glb",
+    "collider": "collider.glb",
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.75,
+        "z": 27.5
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.85,
+        "z": -4.2
+    },
+	"health": 10000.0,
+
+	"mass": 5000.0,
+	"inertia": 100000.0,
+	"centerOfMassLocal": {
+		"x": 0.0,
+		"y": -1.5,
+		"z": 0.0
+	},
+    
+    "intercept": true,
+    "maxSpeed": 600.0,
+    "minSpeed": 80.0,
+	"maxTractionForce": 30.0,
+	"maxTurnForce": 120.0,
+	"minTurnRadius": 300.0,
+	"minTurnRadiusAir": 300.0,
+    "maxRollRate": 3.0,
+    "groundOffset": 2.48,
+
+	"bodyRadius": 20.0,
+
+    "thrustForce": 12.5,
+    "brakeForce": 400.0,
+    "drag": 5.0,
+	"airbrakeDrag": 10.0,
+    "pitchForce": 1.25,
+    "rollForce": 16.0,
+    "yawForce": 0.5,
+    "wingLift": 0.05,
+    "wingDrag": 1500.0,
+    "angularDamping": 3.0,
+
+    "animations": [
+		{
+			"mesh": "elevator-rudder-right",
+			"jointType": "hinge",
+			"axis": {
+				"x": -1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.15,
+			"maxAngle":  0.15,
+			"input": "elevator"
+		},
+		{
+			"mesh": "elevator-rudder-left",
+			"jointType": "hinge",
+			"axis": {
+				"x": -1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.15,
+			"maxAngle":  0.15,
+			"input": "elevator"
+		},
+		{
+			"mesh": "elevator-rudder-right",
+			"jointType": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.15,
+			"maxAngle":  0.15,
+			"input": "rudder"
+		},
+		{
+			"mesh": "elevator-rudder-left",
+			"jointType": "hinge",
+			"axis": {
+				"x": -1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.15,
+			"maxAngle":  0.15,
+			"input": "rudder"
+		},
+		{
+			"mesh": "aileron-right",
+			"jointType": "hinge",
+			"axis": {
+				"x": -1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.7,
+			"maxAngle":  0.7,
+			"input": "aileron"
+		},
+		{
+			"mesh": "aileron-left",
+			"jointType": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": -0.7,
+			"maxAngle":  0.7,
+			"input": "aileron"
+		},
+		{
+			"mesh": "gear-front",
+			"jointType": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": 0.0,
+			"maxAngle": -1.8,
+			"input": "gear",
+			"inverse": true
+		},
+		{
+			"mesh": "gear-right",
+			"jointType": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": 0.0,
+			"maxAngle": 1.7,
+			"input": "gear",
+			"inverse": true
+		},
+		{
+			"mesh": "gear-left",
+			"jointType": "hinge",
+			"axis": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"minAngle": 0.0,
+			"maxAngle": 1.7,
+			"input": "gear",
+			"inverse": true
+		}
+	],
+
+	"weapons": [
+		{
+			"type": "gun",
+			"muzzles": [
+				{		
+					"position": {
+						"x": 0.85,
+						"y": -0.48,
+						"z": -5.5
+					}
+				}
+			],
+			"direction": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": -1.0
+			},
+			"bulletDamage": 15,
+			"interval": 0.1,
+			"ammo": 6000,
+			"range": 1500.0
+		},
+		{
+			"type": "missile",
+			"launchers": [
+				{
+					"position": {
+						"x": 3.615,
+						"y": -0.5,
+						"z": 1.494
+					}
+				},
+				{
+					"position": {
+						"x": -3.615,
+						"y": -0.5,
+						"z": 1.494
+					}
+				}
+			]
+		}
+	],
+	"availableSPWeapons": [
+		{
+			"type": "burst-missile",
+			"launchers": [
+				{
+					"position": {
+						"x": 0.0,
+						"y": -1.5,
+						"z": 0.0
+					}
+				}
+			]
+		},
+		{
+			"type": "tactical-laser",
+			"muzzles": [
+				{		
+					"position": {
+						"x": 0.0,
+						"y": -1.6,
+						"z": -2.0
+					},
+					"damage": 3000
+				}
+			]
+		},
+		{
+			"type": "escort-drone"
+		}
+	],
+	"selectedSPWeapon": "tactical-laser",
+
+	"wheels": [
+		{
+			"active": true,
+			"steer": true,
+			"maxSteerAngle": 0.75,
+			"maxBrakeTorque": 100.0,
+			"anchorPointLocal": {
+				"x":  0.0,
+				"y": -0.99,
+				"z": -4.5
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 1.16,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.31,
+			"wheelFriction": 30000.0,
+			"model": "gear-front"
+		},
+		{
+			"active": true,
+			"maxBrakeTorque": 100.0,
+			"anchorPointLocal": {
+				"x": -2.0,
+				"y": -0.67,
+				"z":  1.0
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x":  1.0,
+				"y":  0.0,
+				"z":  0.0
+			},
+			"suspensionRestLength": 1.4,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.38,
+			"wheelFriction": 40000.0,
+			"model": "gear-left"
+		},
+		{
+			"active": true,
+			"maxBrakeTorque": 100.0,
+			"anchorPointLocal": {
+				"x":  2.0,
+				"y": -0.67,
+				"z":  1.0
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 1.4,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.38,
+			"wheelFriction": 40000.0,
+			"model": "gear-right"
+		}
+	],
+
+	"vapourTrails": {
+		"right": {
+			"position": {
+				"x": 7.4, 
+				"y": 0.0,
+				"z": 3.5
+			},
+			"radius": 0.3
+		},
+		"left": {
+			"position": {
+				"x": -7.4, 
+				"y": 0.0,
+				"z": 3.5
+			},
+			"radius": 0.3
+		}
+	},
+	"vapourSmokes": {
+		"right": {
+			"startVertices": [
+				{
+					"x": 1.74, 
+					"y": 0.41,
+					"z": -1.90
+				},
+				{
+					"x": 3.72, 
+					"y": 0.33,
+					"z": 0.13
+				},
+				{
+					"x": 7.40, 
+					"y": 0.18,
+					"z": 3.90
+				}
+			],
+			"endVertices": [
+				{
+					"x": 1.74, 
+					"y": 0.41,
+					"z": 10.1
+				},
+				{
+					"x": 3.72, 
+					"y": 0.33,
+					"z": 5.37
+				},
+				{
+					"x": 7.40, 
+					"y": 0.18,
+					"z": 5.90
+				}
+			]
+		},
+		"left": {
+			"startVertices": [
+				{
+					"x": -1.74, 
+					"y": 0.41,
+					"z": -1.90
+				},
+				{
+					"x": -3.72, 
+					"y": 0.33,
+					"z": 0.13
+				},
+				{
+					"x": -7.40, 
+					"y": 0.18,
+					"z": 3.90
+				}
+			],
+			"endVertices": [
+				{
+					"x":-1.74, 
+					"y": 0.41,
+					"z": 10.1
+				},
+				{
+					"x": -3.72, 
+					"y": 0.33,
+					"z": 5.37
+				},
+				{
+					"x": -7.40, 
+					"y": 0.18,
+					"z": 5.90
+				}
+			]
+		}
+	},
+
+	"engines": [
+		{
+			"vertices": [
+				{
+					"x": 0.00, 
+					"y": 0.18,
+					"z": 0.2
+				},
+				{
+					"x": -0.5, 
+					"y":  0.15,
+					"z":  0.00
+				},
+				{
+					"x": -0.5, 
+					"y": -0.15,
+					"z":  0.00
+				}, 
+				{ 
+					"x":  0.00, 
+					"y": -0.18,
+					"z":  0.2
+				},
+				{ 
+					"x":  0.5, 
+					"y": -0.15,
+					"z":  0.00
+				},
+				{ 
+					"x":  0.5, 
+					"y":  0.15,
+					"z":  0.00
+				}
+			],
+			"nozzles": [
+				{
+					"position": {
+						"x": -0.72, 
+						"y":  0.14,
+						"z":  7.50
+					},
+					"direction": {
+						"x": 0.0, 
+						"y": 0.0,
+						"z": 1.0
+					}
+				},
+				{
+					"position": {
+						"x":  0.72, 
+						"y":  0.14,
+						"z":  7.50
+					},
+					"direction": {
+						"x": 0.0, 
+						"y": 0.0,
+						"z": 1.0
+					}
+				}
+			]
+		}
+	]
+}

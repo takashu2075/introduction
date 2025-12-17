@@ -1,0 +1,63 @@
+{
+    "name": "XF-0-B",
+    "type": "aircraft",
+    "model": "model.glb",
+    "bodyRadius": 20.0,
+
+	"intercept": true,
+    "maxSpeed": 300.0,
+    "minSpeed": 100.0,
+	"maxForce": 1.0,
+	"maxTractionForce": 10.0,
+	"maxTurnForce": 60.0,
+    "maxRoll": 10.0,
+	"minTurnRadius": 600.0,
+    "groundOffset": 2.12,
+
+	"weapons": [
+		{
+			"type": "gun",
+			"position": {
+				"x": 0.7,
+				"y": -0.7,
+				"z": -3.0
+			},
+			"fireInterval": 0.1,
+			"damage": 20.0,
+			"speed": 1500.0
+			
+		},
+		{
+			"type": "missile",
+			"launchers": [
+				{
+					"component": "Missile_Launcher",
+					"position": {
+						"x": 5.0,
+						"y": 0.0,
+						"z": 0.0
+					}
+				},
+				{
+					"component": "Missile_Launcher",
+					"position": {
+						"x": -5.0,
+						"y": 0.0,
+						"z": 0.0
+					}
+				}
+			],
+			"reloadTime": 1.0
+		}
+	],
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.0,
+        "z": 25.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": -5.2
+    }
+}

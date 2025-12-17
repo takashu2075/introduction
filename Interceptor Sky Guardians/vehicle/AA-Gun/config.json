@@ -1,0 +1,49 @@
+{
+    "name": "AA-Gun",
+    "type": "tank",
+    "model": "model.glb",
+    "bodyRadius": 15.0,
+	"intercept": true,
+    "health": 70.0,
+    "maxSpeed": 0.0,
+    "minSpeed": 0.0,
+	"maxForce": 15.0,
+    "groundOffset": 1.0,
+	"weapons": [
+		{
+			"type": "turret-b",
+            "turretMesh": "Turret",
+            "muzzleMesh": "Muzzle",
+			"position": {
+				"x": 0.0,
+				"y": 2.0,
+				"z": 0.0
+			},
+            "axis": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "range": 3000.0,
+            "maxVerticalAngle": 1.0,
+            "bulletSpeed": 1000.0,
+            "bulletDuration": 10.0,
+            "fireInterval": 0.3
+		}
+	],
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.0,
+        "z": 25.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": -5.2
+    }
+}

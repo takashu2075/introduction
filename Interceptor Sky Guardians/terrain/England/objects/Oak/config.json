@@ -1,0 +1,14 @@
+{
+    "name": "Tree",
+    "model": "model.glb",
+    "collider": "collider.glb",
+    "minScale": 0.75,
+    "maxScale": 1.25,
+    "explosionPosition": {
+        "x": 0.0,
+        "y": 10.0,
+        "z": 0.0
+    },
+    "explosionSize": 100.0,
+    "useImposter": false
+}

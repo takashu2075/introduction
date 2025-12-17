@@ -1,0 +1,22 @@
+{
+    "pitchUp": "ArrowDown",
+    "pitchDown": "ArrowUp",
+    "rollRight": "ArrowRight",
+    "rollLeft": "ArrowLeft",
+    "yawRight": "d",
+    "yawLeft": "a",
+    "throttleUp": "w",
+    "throttleDown": "s",
+    "fireGun": " ",
+    "fireSubWeapon": "Shift",
+    "changeSubWeapon": "q",
+    "changeTarget": "t",
+    "changeRadarScale": "r",
+    "changeView": "c",
+    "toggleGear": "g",
+    "lookRight": "6",
+    "lookLeft": "4",
+    "lookUp": "8",
+    "lookDown": "2",
+    "pause": "Escape"
+}

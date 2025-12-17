@@ -1,0 +1,58 @@
+{
+    "name": "Tank",
+    "type": "tank",
+    "model": "model.glb",
+    "bodyRadius": 15.0,
+    "health": 100.0,
+
+    "intercept": true,
+    "maxSpeed": 30.0,
+    "minSpeed": 0.0,
+	"maxForce": 15.0,
+	"minTurnRadius": 10.0,
+    "groundOffset": 1.0,
+
+	"weapons": [
+		{
+			"type": "turret",
+            "turretMesh": "turret",
+            "muzzleMesh": "muzzle",
+            "range": 3000.0,
+            "isFullRotation": true,
+            "maxMuzzleAngle": 30.0,
+            "minMuzzleAngle": -5.0,
+			"position": {
+				"x": 0.0,
+				"y": 1.65,
+				"z": 0.0
+			},
+            "axis": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "weapon": {
+                "type": "gun",
+                "bulletDamage": 50.0,
+                "bulletSpeed": 500.0,
+                "bulletDuration": 3.0,
+                "fireInterval": 5.0
+            }
+		}
+	],
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.0,
+        "z": 25.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": -5.2
+    }
+}

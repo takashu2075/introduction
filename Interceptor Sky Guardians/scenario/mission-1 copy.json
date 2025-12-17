@@ -1,0 +1,771 @@
+{
+    "map": "England",
+    "weather": "clear",
+    "timeOfDay": "07:00",
+    "vehicleBases": [
+        "XF-0",
+        "XF-0-B",
+        "B-52",
+        "Tank",
+        "Tank-A",
+        "AA-Gun",
+        "Airship"
+    ],
+    "initialEvents": [
+        "player-unit-spawn",
+        "enemy-tanks-spawn"
+    ],
+    "events": [
+        {
+            "id": "player-unit-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "player",
+                    "vehicle": "XF-0",
+                    "iff": 1,
+                    "position": {
+                        "x": 1500.0,
+                        "y": 800.0,
+                        "z": 4500.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "player": true,
+                    "wingmen": [
+                    ]
+                }
+            ],
+            "nextEvents": [
+            ]
+        },
+        {
+            "id": "enemy-fighter-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-fighter-a",
+                    "vehicle": "XF-0-B",
+                    "iff": 2,
+                    "position": {
+                        "x": 300.0,
+                        "y": 1000.0,
+                        "z": -1500.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "speed": 500
+                }
+            ]
+        },
+        {
+            "id": "friendly-fighters-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "vehicle": "XF-0",
+                    "iff": 1,
+                    "position": {
+                        "x": 1500.0,
+                        "y": 1000.0,
+                        "z": 0.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 90.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "formationPosition": {
+                                "x": 30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": -30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "enemy-fighters-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-fighter-1",
+                    "vehicle": "XF-0-B",
+                    "iff": 2,
+                    "position": {
+                        "x": 100.0,
+                        "y": 1000.0,
+                        "z": 3000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "id": "enemy-fighter-2",
+                            "formationPosition": {
+                                "x": 30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "id": "enemy-fighter-3",
+                            "formationPosition": {
+                                "x": -30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "id": "enemy-fighter-4",
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "nextEvents": [
+                "enemy-fighters-destroy"
+            ]
+        },
+        {
+            "id": "enemy-fighters-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-fighter-1",
+                "enemy-fighter-2",
+                "enemy-fighter-3",
+                "enemy-fighter-4"
+            ],
+            "nextEvents": [
+                "enemy-fighters-spawn"
+            ]
+        },
+        {
+            "id": "enemy-fighters-2-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-fighter-2-1",
+                    "vehicle": "XF-0-B",
+                    "iff": 2,
+                    "position": {
+                        "x": -100.0,
+                        "y": 1000.0,
+                        "z": -5000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 180.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "id": "enemy-fighter-2-2",
+                            "formationPosition": {
+                                "x": 100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-fighter-2-3",
+                            "formationPosition": {
+                                "x": -100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-fighter-2-4",
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 200.0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "nextEvents": [
+                "enemy-fighters-2-destroy"
+            ]
+        },
+        {
+            "id": "enemy-fighters-2-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-fighter-2-1",
+                "enemy-fighter-2-2",
+                "enemy-fighter-2-3",
+                "enemy-fighter-2-4"
+            ],
+            "nextEvents": [
+                "enemy-fighters-2-spawn"
+            ]
+        },
+        {
+            "id": "friendly-tanks-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "friendly-tank",
+                    "vehicle": "Tank-A",
+                    "iff": 1,
+                    "health": 10000.0,
+                    "position": {
+                        "x": -100.0,
+                        "y": 50.0,
+                        "z": -10000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "formationPosition": {
+                                "x": 15.0,
+                                "y": 0.0,
+                                "z": 25.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": -15.0,
+                                "y": 0.0,
+                                "z": 25.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "enemy-tanks-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-tank-1",
+                    "vehicle": "Tank",
+                    "iff": 2,
+                    "position": {
+                        "x": -1000.0,
+                        "y": 50.0,
+                        "z": 2000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": -135,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "id": "enemy-tank-2",
+                            "formationPosition": {
+                                "x": 15.0,
+                                "y": 0.0,
+                                "z": 25.0
+                            }
+                        },
+                        {
+                            "id": "enemy-tank-3",
+                            "formationPosition": {
+                                "x": -15.0,
+                                "y": 0.0,
+                                "z": 25.0
+                            }
+                        },
+                        {
+                            "id": "enemy-tank-4",
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "nextEvents": [
+                "enemy-tanks-destroy"
+            ]
+        },
+        {
+            "id": "enemy-tanks-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-tank-1",
+                "enemy-tank-2",
+                "enemy-tank-3",
+                "enemy-tank-4"
+            ],
+            "nextEvents": [
+                "enemy-tanks-spawn"
+            ]
+        },
+        {
+            "id": "enemy-aaguns-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-aagun-1",
+                    "vehicle": "AA-Gun",
+                    "iff": 2,
+                    "position": {
+                        "x": 100.0,
+                        "y": 50.0,
+                        "z": -10000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "id": "enemy-aagun-2",
+                    "vehicle": "AA-Gun",
+                    "iff": 2,
+                    "position": {
+                        "x": -100.0,
+                        "y": 50.0,
+                        "z": -10000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "id": "enemy-aagun-3",
+                    "vehicle": "AA-Gun",
+                    "iff": 2,
+                    "position": {
+                        "x": 100.0,
+                        "y": 50.0,
+                        "z": -11000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "id": "enemy-aagun-4",
+                    "vehicle": "AA-Gun",
+                    "iff": 2,
+                    "position": {
+                        "x": -100.0,
+                        "y": 50.0,
+                        "z": -11000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "nextEvents": [
+                "enemy-aaguns-destroy"
+            ]
+        },
+        {
+            "id": "enemy-aaguns-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-aagun-1",
+                "enemy-aagun-2",
+                "enemy-aagun-3",
+                "enemy-aagun-4"
+            ],
+            "nextEvents": [
+                "enemy-aaguns-spawn"
+            ]
+        },
+        {
+            "id": "enemy-fighters-spawn-2",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-fighter-2",
+                    "vehicle": "XF-0-B",
+                    "iff": 2,
+                    "position": {
+                        "x": 100.0,
+                        "y": 1000.0,
+                        "z": -3000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 180.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "formationPosition": {
+                                "x": 30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": -30.0,
+                                "y": 0.0,
+                                "z": 50.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "enemy-bombers-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-bomber-1",
+                    "vehicle": "B-52",
+                    "iff": 2,
+                    "position": {
+                        "x": -3000.0,
+                        "y": 800.0,
+                        "z": -1300.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": -90.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "id": "enemy-bomber-2",
+                            "formationPosition": {
+                                "x": 100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-3",
+                            "formationPosition": {
+                                "x": 200.0,
+                                "y": 0.0,
+                                "z": 200.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-4",
+                            "formationPosition": {
+                                "x": -100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-5",
+                            "formationPosition": {
+                                "x": -200.0,
+                                "y": 0.0,
+                                "z": 200.0
+                            }
+                        }
+                    ],
+                    "initialWaypoint": "waypoint-1"
+                }
+            ],
+            "nextEvents": [
+                "enemy-bombers-destroy"
+            ]
+        },
+        {
+            "id": "enemy-bombers-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-bomber-1",
+                "enemy-bomber-2",
+                "enemy-bomber-3",
+                "enemy-bomber-4",
+                "enemy-bomber-5"
+            ],
+            "nextEvents": [
+                "enemy-bombers-spawn"
+            ]
+        },
+        {
+            "id": "enemy-bombers-2-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-bomber-2-1",
+                    "vehicle": "B-52",
+                    "iff": 2,
+                    "position": {
+                        "x": 3000.0,
+                        "y": 800.0,
+                        "z": 1300.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 90.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "id": "enemy-bomber-2-2",
+                            "formationPosition": {
+                                "x": 100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-2-3",
+                            "formationPosition": {
+                                "x": 200.0,
+                                "y": 0.0,
+                                "z": 200.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-2-4",
+                            "formationPosition": {
+                                "x": -100.0,
+                                "y": 0.0,
+                                "z": 100.0
+                            }
+                        },
+                        {
+                            "id": "enemy-bomber-2-5",
+                            "formationPosition": {
+                                "x": -200.0,
+                                "y": 0.0,
+                                "z": 200.0
+                            }
+                        }
+                    ],
+                    "initialWaypoint": "waypoint-1"
+                }
+            ],
+            "nextEvents": [
+                "enemy-bombers-2-destroy"
+            ]
+        },
+        {
+            "id": "enemy-bombers-2-destroy",
+            "type": "on-destroy",
+            "targets": [
+                "enemy-bomber-2-1",
+                "enemy-bomber-2-2",
+                "enemy-bomber-2-3",
+                "enemy-bomber-2-4",
+                "enemy-bomber-2-5"
+            ],
+            "nextEvents": [
+                "enemy-bombers-2-spawn"
+            ]
+        },
+        {
+            "id": "enemy-airships-spawn",
+            "type": "spawn",
+            "vehicles": [
+                {
+                    "id": "enemy-airship",
+                    "vehicle": "Airship",
+                    "iff": 2,
+                    "position": {
+                        "x": 3000.0,
+                        "y": 800.0,
+                        "z": -3000.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": -90.0,
+                        "z": 0.0
+                    },
+                    "speed": 500,
+                    "wingmen": [
+                        {
+                            "formationPosition": {
+                                "x": 1000.0,
+                                "y": 0.0,
+                                "z": 1000.0
+                            }
+                        },
+                        {
+                            "formationPosition": {
+                                "x": -1000.0,
+                                "y": 0.0,
+                                "z": 1000.0
+                            }
+                        }
+                    ],
+                    "initialWaypoint": "waypoint-1"
+                }
+            ]
+        },
+        {
+            "id": "on-destroy-all-bombers",
+            "type": "on-destroy",
+            "destroyWingmen": true,
+            "vehicles": [
+                "enemy-bomber-unit-1",
+                "enemy-bomber-unit-2"
+            ],
+            "nextEvents": [
+                "enemy-airship-spawn"
+            ]
+        },
+        {
+            "id": "on-mission-timeout",
+            "type": "on-timeout",
+            "time": 600000,
+            "nextEvents": [
+                "mission-failure"
+            ]
+        },
+        {
+            "id": "on-destroy-enemy-airship",
+            "type": "on-destroy",
+            "vehicles": [
+                "enemy-airship"
+            ],
+            "nextEvents": [
+                "mission-complete"
+            ]
+        },
+        {
+            "id": "mission-complete",
+            "type": "mission-complete"
+        },
+        {
+            "id": "mission-failure",
+            "type": "mission-failure"
+        }
+    ],
+    "waypoints": [
+        {
+            "id": "waypoint-1",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": -6000, 
+                "y": 800,
+                "z": -3000
+            },
+            "nextWaypoint": "waypoint-2"
+        },
+        {
+            "id": "waypoint-2",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": -6000, 
+                "y": 800,
+                "z": 3000
+            },
+            "nextWaypoint": "waypoint-3"
+        },
+        {
+            "id": "waypoint-3",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": 0, 
+                "y": 800,
+                "z": 0
+            },
+            "nextWaypoint": "waypoint-4"
+        },
+        {
+            "id": "waypoint-4",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": 6000, 
+                "y": 800,
+                "z": 3000
+            },
+            "nextWaypoint": "waypoint-5"
+        },
+        {
+            "id": "waypoint-5",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": 6000, 
+                "y": 800,
+                "z": -3000
+            },
+            "nextWaypoint": "waypoint-6"
+        },
+        {
+            "id": "waypoint-6",
+            "type": "normal",
+            "radius": 500,
+            "position": {
+                "x": 0, 
+                "y": 800,
+                "z": 0
+            },
+            "nextWaypoint": "waypoint-1"
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "name": "Gunship",
+    "type": "aircraft",
+    "model": "model.glb",
+    "collider": "collider.glb",
+	
+	"health": 3000.0,
+
+    "canBomb": true,
+
+	"intercept": false,
+    "maxSpeed": 120.0,
+    "minSpeed": 70.0,
+	"maxForce": 10.0,
+	"maxTractionForce": 2.0,
+	"maxTurnForce": 10.0,
+    "maxRollRate": 0.1,
+	"minTurnRadius": 1500.0,
+    "groundOffset": 2.12,
+
+    "bodyRadius": 30,
+    "bodyType": "convex",
+    "bodySize": {
+        "x": 10,
+        "y": 10,
+        "z": 10
+    },
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 100.0,
+        "z": 500.0
+    },
+    "thrustForce": 50.0,
+    "brakeForce": 100.0,
+    "liftForce": 0.1,
+    "pitchForce": 0.03,
+    "rollForce": 0.15,
+    "yawForce": 0.01,
+    "linearAirResistance": {
+        "x": 0.0003,
+        "y": 0.0003,
+        "z": 0.0003
+    },
+    "angularAirResistance": {
+        "x": 100.0,
+        "y": 100.0,
+        "z": 100.0
+    },
+    "weapons": [
+        {
+            "type": "turret",
+            "turretMesh": "Turret",
+            "position": {
+                "x": 82.0,
+                "y": 8.0,
+                "z": 48.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "projectile": {
+                "type": "bullet"
+            },
+            "maxAngle": 1.0,
+            "fireInterval": 0.25
+        },
+        {
+            "type": "turret",
+            "turretMesh": "Turret",
+            "position": {
+                "x": 82.0,
+                "y": 8.0,
+                "z": -1.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "projectile": {
+                "type": "bullet"
+            },
+            "maxAngle": 1.0,
+            "fireInterval": 0.25
+        },
+        {
+            "type": "turret",
+            "turretMesh": "turret",
+            "position": {
+                "x": 28.0,
+                "y": 13.0,
+                "z": 30.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "projectile": {
+                "type": "missile"
+            },
+            "maxAngle": 1.4,
+            "fireInterval": 2.0
+        },
+        {
+            "type": "turret",
+            "turretMesh": "turret-2",
+            "position": {
+                "x": 25.0,
+                "y": -8.0,
+                "z": 30.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": -1.0,
+                "z": 0.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "projectile": {
+                "type": "missile"
+            },
+            "maxAngle": 1.4,
+            "fireInterval": 2.0
+        },
+        {
+            "type": "turret",
+            "turretMesh": "Turret",
+            "position": {
+                "x": 24.0,
+                "y": 12.0,
+                "z": 139.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "projectile": {
+                "type": "bullet"
+            },
+            "maxAngle": 1.0,
+            "bulletDamage": 10.0,
+            "fireInterval": 0.25
+        },
+        {
+            "type": "bomb",
+            "position": {
+                "x": 0.0,
+                "y": -9.0,
+                "z": -6.0
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "name": "Tank-A",
+    "type": "tank",
+    "model": "model.glb",
+    "bodyRadius": 10.0,
+	"intercept": true,
+    "health": 100.0,
+    "maxSpeed": 50.0,
+    "minSpeed": 10.0,
+	"maxForce": 15.0,
+    "groundOffset": 1.0,
+	"weapons": [
+		{
+			"type": "turret-b",
+            "mesh": "Turret",
+			"position": {
+				"x": 0.0,
+				"y": 2.0,
+				"z": 0.0
+			},
+            "range": 10000.0,
+			"fireInterval": 5.0,
+			"bulletPower": 70.0,
+			"bulletSpeed": 2000.0
+		}
+	],
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 5.0,
+        "z": 25.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": -5.2
+    }
+}

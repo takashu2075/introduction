@@ -1,0 +1,122 @@
+{
+    "name": "Truck",
+    "type": "car",
+    "model": "model.glb",
+    "collider": "collider.glb",
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 2.5,
+        "z": 12.0
+    },
+    "cockpitCameraPosition": {
+        "x": 0.0,
+        "y":  1.2,
+        "z": -0.2
+    },
+	"health": 100000.0,
+    "engineForce": 100.0,
+    "brakeForce": 100.0,
+	"centerOfMassLocal": {
+		"x":  0.0,
+		"y":  -0.15,
+		"z":  0.0
+	},
+	"wheels": [
+		{
+			"steer": true,
+			"anchorPointLocal": {
+				"x":  1.2,
+				"y":  0.65,
+				"z": -1.6
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 0.8,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.5,
+			"wheelFriction": 30.0,
+			"model": "Wheel FR"
+		},
+		{
+			"steer": true,
+			"anchorPointLocal": {
+				"x": -1.2,
+				"y":  0.65,
+				"z": -1.6
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 0.8,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.5,
+			"wheelFriction": 30.0,
+			"model": "Wheel FL"
+		},
+		{
+			"drive": true,
+			"anchorPointLocal": {
+				"x":  1.2,
+				"y":  0.65,
+				"z":  1.6
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 0.8,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.5,
+			"wheelFriction": 30.0,
+			"model": "Wheel RR"
+		},
+		{
+			"drive": true,
+			"anchorPointLocal": {
+				"x": -1.2,
+				"y":  0.65,
+				"z":  1.6
+			},
+			"suspensionDirectionLocal": {
+				"x":  0.0,
+				"y": -1.0,
+				"z":  0.0
+			},
+			"wheelAxleLocal": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"suspensionRestLength": 0.8,
+			"suspensionStiffness": 100.0,
+			"suspensionDamping": 10.0,
+			"wheelRadius": 0.5,
+			"wheelFriction": 30.0,
+			"model": "Wheel RL"
+		}
+	]
+}

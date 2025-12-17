@@ -1,0 +1,86 @@
+{
+    "name": "B-52",
+    "type": "aircraft",
+    "model": "model.glb",
+    "collider": "collider.glb",
+
+    "canBomb": true,
+
+    "health": 250.0,
+
+	"intercept": false,
+    "maxSpeed": 150.0,
+    "minSpeed": 100.0,
+	"maxForce": 1.0,
+	"maxTractionForce": 2.5,
+	"maxTurnForce": 15.0,
+    "maxRollRate": 0.25,
+	"minTurnRadius": 1000.0,
+    "groundOffset": 2.12,
+
+    "bodyRadius": 30,
+    "bodyType": "convex",
+    "bodySize": {
+        "x": 10,
+        "y": 10,
+        "z": 10
+    },
+    "cameraPosition": {
+        "x": 0.0,
+        "y": 20.0,
+        "z": 100.0
+    },
+    "thrustForce": 50.0,
+    "brakeForce": 100.0,
+    "liftForce": 0.1,
+    "pitchForce": 0.03,
+    "rollForce": 0.15,
+    "yawForce": 0.01,
+    "linearAirResistance": {
+        "x": 0.0003,
+        "y": 0.0003,
+        "z": 0.0003
+    },
+    "angularAirResistance": {
+        "x": 100.0,
+        "y": 100.0,
+        "z": 100.0
+    },
+    "weapons": [
+        {
+            "type": "turret",
+            "turretMesh": "Turret",
+            "maxRotationSpeed": 30.0,
+            "maxTurretAngle": 60.0,
+            "maxMuzzleAngle": 60.0,
+            "minMuzzleAngle": -60.0,
+            "position": {
+                "x": 0.0,
+                "y": -3.0,
+                "z": 21.0
+            },
+            "direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "up": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "projectile": {
+                "type": "bullet"
+            },
+            "fireInterval": 0.25
+        },
+        {
+            "type": "bomb",
+            "position": {
+                "x": 0.0,
+                "y": -2.0,
+                "z": 0.0
+            }
+        }
+    ]
+}

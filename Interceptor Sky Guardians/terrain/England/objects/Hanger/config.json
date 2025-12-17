@@ -1,0 +1,5 @@
+{
+    "name": "Hanger",
+    "model": "model.glb",
+    "collider": "collider.glb"
+}
