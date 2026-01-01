@@ -7,17 +7,16 @@
     "bodyRadius": 20.0,
 
 	"intercept": true,
-    "maxSpeed": 300.0,
-    "minSpeed": 100.0,
+    "maxSpeed": 400.0,
+    "minSpeed": 200.0,
 	"maxForce": 60.0,
 	
 	"maxThrustForce": 5.0,
 	"maxBrakeForce": 5.0,
 	"maxTurnForce": 50.0,
 
-	"maxTractionForce": 10.0,
     "maxRoll": 10.0,
-	"minTurnRadius": 600.0,
+	"minTurnRadius": 1000.0,
     "groundOffset": 2.12,
 
 	"weapons": [
@@ -29,9 +28,7 @@
 				"z": -3.0
 			},
 			"fireInterval": 0.1,
-			"damage": 20.0,
 			"speed": 1500.0
-			
 		},
 		{
 			"type": "missile",

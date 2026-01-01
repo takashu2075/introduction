@@ -53,7 +53,6 @@
     },
     "allyVehicles": [
         {
-            "active": true,
             "vehicle": "AA-Gun",
             "position": {
                 "x": 1900.0,
@@ -62,7 +61,6 @@
             }
         },
         {
-            "active": true,
             "vehicle": "SAM",
             "position": {
                 "x": 900.0,
@@ -71,7 +69,6 @@
             }
         },
         {
-            "active": true,
             "vehicle": "AA-Gun",
             "position": {
                 "x": 1900.0,
@@ -80,7 +77,6 @@
             }
         },
         {
-            "active": true,
             "vehicle": "SAM",
             "position": {
                 "x": 900.0,
@@ -90,8 +86,236 @@
         }
     ],
     "enemyWaves": [
-        
         [
+            {
+                "vehicle": "MiG-29",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ]
+            },
+            {
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "active": true,
+                "count": 3,
+                "vehicle": "AA-Gun",
+                "wingmen": [
+                    {
+                        "vehicle": "SAM",
+                        "formationPosition": {
+                            "x": 100.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ]
+            },
+            {
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "vehicle": "MiG-29",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ]
+            },
+            {
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "active": true,
+                "vehicle": "B-52",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 100.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 200.0,
+                            "y": 0.0,
+                            "z": 200.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -100.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -200.0,
+                            "y": 0.0,
+                            "z": 200.0
+                        }
+                    }
+                ]
+            },
+            {
+                "active": true,
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "vehicle": "MiG-29",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ]
+            },
+            {
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "active": true,
+                "vehicle": "Tank",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ],
+                "count": 4
+            }
+        ],
+        [
+            {
+                "vehicle": "MiG-29",
+                "wingmen": [
+                    {
+                        "formationPosition": {
+                            "x": 50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": -50.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    },
+                    {
+                        "formationPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 100.0
+                        }
+                    }
+                ]
+            },
+            {
+                "vehicle": "MiG-29",
+                "count": 4
+            }
+        ],
+        [
+            {
+                "active": true,
+                "vehicle": "MiG-29",
+                "position": {
+                    "x": -1680.0,
+                    "y": 1000.0,
+                    "z": 5000.0
+                }
+            },
             {
                 "vehicle": "Destroyer",
                 "position": {
@@ -148,64 +372,11 @@
                         }
                     }
                 ]
-            },
-            {
-                "active": false,
-                "vehicle": "MiG-29",
-                "position": {
-                    "x": -1680.0,
-                    "y": 1000.0,
-                    "z": 5000.0
-                }
-            },
-            {
-                "active": false,
-                "vehicle": "MiG-29",
-                "position": {
-                    "x": -680.0,
-                    "y": 1000.0,
-                    "z": 5000.0
-                }
             }
         ],
         [
             {
-                "active": true,
                 "vehicle": "MiG-29",
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 75.0,
-                            "y": 0.0,
-                            "z": 75.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -75.0,
-                            "y": 0.0,
-                            "z": 75.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 150.0
-                        }
-                    }
-                ]
-            },
-            {
-                "active": true,
-                "vehicle": "MiG-29",
-                "count": 4
-            }
-        ],
-        [
-            {
-                "active": true,
-                "vehicle": "Tank",
                 "wingmen": [
                     {
                         "formationPosition": {
@@ -231,59 +402,8 @@
                 ]
             },
             {
-                "active": true,
-                "count": 3,
-                "vehicle": "AA-Gun",
-                "wingmen": [
-                    {
-                        "vehicle": "SAM",
-                        "formationPosition": {
-                            "x": 100.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    }
-                ]
-            }
-        ],
-        [
-            {
-                "vehicle": "B-52",
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 100.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 200.0,
-                            "y": 0.0,
-                            "z": 200.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -100.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -200.0,
-                            "y": 0.0,
-                            "z": 200.0
-                        }
-                    }
-                ]
-            },
-            {
-                "active": true,
                 "vehicle": "MiG-29",
-                "count": 2
+                "count": 4
             }
         ],
         [
@@ -292,7 +412,6 @@
                 "count": 4
             },
             {
-                "active": true,
                 "vehicle": "Tank",
                 "wingmen": [
                     {
@@ -322,111 +441,6 @@
                 "active": true,
                 "vehicle": "MiG-29",
                 "count": 2
-            }
-        ],
-        [
-            {
-                "vehicle": "B-2"
-            },
-            {
-                "vehicle": "B-2"
-            },
-            {
-                "vehicle": "B-2"
-            },
-            {
-                "vehicle": "B-2"
-            },
-            {
-                "vehicle": "MiG-29",
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    }
-                ]
-            }
-        ],
-        [
-            
-            {
-                "vehicle": "Destroyer",
-                "position": {
-                    "x": 1000.0,
-                    "y": 20.0,
-                    "z": 3000.0
-                },
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 200.0,
-                            "y": 0.0,
-                            "z": 250.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -200.0,
-                            "y": 0.0,
-                            "z": 250.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 500.0
-                        }
-                    }
-                ]
-            }
-        ],
-        [
-            {
-                "vehicle": "Gunship"
-            },
-            {
-                "vehicle": "MiG-29",
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    }
-                ]
             }
         ]
     ],
