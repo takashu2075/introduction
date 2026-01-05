@@ -26,8 +26,8 @@
     "intercept": true,
     "maxSpeed": 600.0,
     "minSpeed": 100.0,
-	"maxThrustForce": 10.0,
-	"maxBrakeForce": 10.0,
+	"maxThrustForce": 20.0,
+	"maxBrakeForce": 20.0,
 	"maxTurnForce": 120.0,
 	"minTurnRadius": 500.0,
 	"minTurnRadiusAir": 500.0,
@@ -180,12 +180,12 @@
 			},
 			"bulletDamage": 20.0,
 			"interval": 0.1,
-			"ammo": 6000,
+			"ammo": 400,
 			"range": 1500.0
 		},
 		{
 			"type": "missile",
-			"ammo": 100,
+			"ammo": 48,
 			"launchers": [
 				{
 					"position": {

@@ -7,7 +7,7 @@
 	
     "bodyRadius": 25,
 
-    "health": 250.0,
+    "health": 200.0,
 
 	"intercept": false,
     "maxSpeed": 150.0,

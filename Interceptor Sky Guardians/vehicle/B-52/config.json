@@ -6,15 +6,14 @@
 
     "canBomb": true,
 
-    "health": 250.0,
+    "health": 200.0,
 
 	"intercept": false,
     "maxSpeed": 150.0,
     "minSpeed": 100.0,
-	"maxForce": 1.0,
-	"maxTractionForce": 2.5,
-	"maxTurnForce": 15.0,
-    "maxRollRate": 0.25,
+	"maxForce": 15.0,
+    "maxRollRate": 0.5,
+
 	"minTurnRadius": 1000.0,
     "groundOffset": 2.12,
 
@@ -56,7 +55,7 @@
             "minMuzzleAngle": -60.0,
             "position": {
                 "x": 0.0,
-                "y": -3.0,
+                "y": 0.0,
                 "z": 21.0
             },
             "direction": {
@@ -72,7 +71,7 @@
             "projectile": {
                 "type": "bullet"
             },
-            "fireInterval": 0.25
+            "fireInterval": 0.5
         },
         {
             "type": "bomb",
