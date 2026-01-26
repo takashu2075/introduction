@@ -88,38 +88,6 @@
     "enemyWaves": [
         [
             {
-                "vehicle": "MiG-29",
-                "wingmen": [
-                    {
-                        "formationPosition": {
-                            "x": 50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": -50.0,
-                            "y": 0.0,
-                            "z": 50.0
-                        }
-                    },
-                    {
-                        "formationPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 100.0
-                        }
-                    }
-                ]
-            },
-            {
-                "vehicle": "MiG-29",
-                "count": 4
-            }
-        ],
-        [
-            {
                 "active": true,
                 "count": 3,
                 "vehicle": "AA-Gun",
@@ -255,13 +223,13 @@
             {
                 "vehicle": "Destroyer",
                 "position": {
-                    "x": -680.0,
+                    "x": 1680.0,
                     "y": 1000.0,
                     "z": 5000.0
                 },
                 "rotation": {
                     "x": 0.0,
-                    "y": -90.0,
+                    "y": 90.0,
                     "z": 0.0
                 },
                 "wingmen": [
